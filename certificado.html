@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="h-screen flex justify-center items-center relative italic" id="certificado">
+      <img
+        class="object-contain h-screen "
+        src="./assets/certificadoPaper.jpg" alt="certificado">
+
+      <div id="contenedorTexto" class="absolute text-[12px] md:text-xl xl:text-2xl cursive font-bold"></div>
+    </div>
+    <button class="p-5 bg-green-300 rounded hover:bold text-2xl mx-auto" onclick="descargarPDF()">Descargar</button>
+    <script src="./script.js">
+     
+  </script>
+  </body>
+</html>
