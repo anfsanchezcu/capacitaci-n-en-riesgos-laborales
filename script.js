@@ -23,7 +23,7 @@
       const elemento = document.getElementById('certificado');
       const opciones = {
         margin:       10,
-        filename:     'mi-archivo.pdf',
+        filename:     `${texto}-capacitacion.pdf`,
         image:        { type: 'jpeg', quality: 0.98 },
         html2canvas:  { scale: 2 },
         jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
