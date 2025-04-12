@@ -90,8 +90,8 @@
     <div id="aboutUs"
       class="flex flex-col items-center p-10 min-h-screen justify-center">
       <h2 class="font-bold text-4xl mb-5">Cultura Organizacional</h2>
-      <div class="flex flex-row justify-center gap-10 flex-wrap">
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
+      <div class="flex flex-col md:flex-row justify-center gap-10 flex-wrap">
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <img src="./assets/iconmision.png" class=" w-[250px]" alt>
           <p class="text-center">Somos una empresa que trabaja para brindar un
             transporte vertical mas seguro y confiable a nivel nacional, con el
@@ -99,7 +99,7 @@
             las personas con movilidad reducida y adultos mayores moverse con
             mayor facilidad e independencia.misión</p>
         </div>
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <img src="./assets/iconVision.png" class=" w-[350px]" alt>
           <p class="text-center">Ser una empresa líder a nivel nacional en
             cuanto a calidad, diseño e innovación, en la fabricación e
@@ -110,11 +110,14 @@
 
     </div>
     <div id="organigrama"
-      class="flex flex-col items-center p-20 min-h-screen max-h-screen justify-center relative content-fit">
+      class="flex flex-col items-center p-20 min-h-screen h-screen justify-center relative content-fit">
       <h2 class="font-bold text-4xl mb-5">Organigrama</h2>
-      <img src="./assets/organigrama.png"
-        class="max-h-screen h-[400px] relative hover:scale-[1.3] duration-300 ease-in   "
+      <div class="md:w-1/2">
+        <img 
+        src="./assets/organigrama.png"
+        class=" relative hover:scale-[1.3] duration-300 ease-in   "
         alt="organigrama">
+      </div>
     </div>
     <div id="capacitacion"
       class="flex flex-col items-center gap-15 p-20 justify-center">
@@ -124,18 +127,18 @@
       <h3 class="text-xl font-bold">
         ¿Qué son los Riesgos laborales ?
       </h3>
-      <p class="w-1/2">
+      <p class="md:w-1/2">
 
         Los riesgos laborales son todas aquellas situaciones, condiciones o
         acciones que pueden generar un accidente de trabajo o una enfermedad
         laboral durante la ejecución de las actividades en una empresa.
       </p>
       <img src="./assets/riesgos.jpg " class=" w-[250px]" alt>
-      <div class="flex flex-row justify-center gap-10 flex-row-reverse">
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
+      <div class="flex flex-col md:flex-row justify-center gap-10 md:flex-row-reverse">
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <img src="./assets/importancia.png" class=" w-[250px]" alt>
         </div>
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center "
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center "
           href>
           <h3 class="text-xl font-bold">
             Importancia de la prevención de riesgos laborales.
@@ -151,11 +154,11 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-row justify-center gap-10 ">
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
+      <div class="flex flex-col md:flex-row justify-center gap-10 ">
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <img src="./assets/identificacion.jpg" class=" w-[250px]" alt>
         </div>
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <h3 class="text-xl font-bold">
             Identificación de riesgos en ASTEM PLUS
           </h3>
@@ -182,16 +185,16 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-row justify-center gap-10 flex-row-reverse ">
-        <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
+      <div class="flex flex-col md:flex-row justify-center gap-10 md:flex-row-reverse ">
+        <div class="md:w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <img src="./assets/medidas.jpg" class=" w-[250px]" alt>
         </div>
-        <div class="w-1/2 flex flex-col  gap-2 justify-center items-center"
+        <div class="md:w-1/2 flex flex-col  gap-2 justify-center items-center"
           href>
           <h3 class="text-xl font-bold">
             Controles y Medidas Preventivas
           </h3>
-          <p class=" w-5/6">
+          <p class=" md:w-5/6">
 
             Uso correcto de los Elementos de Protección Personal (EPP): casco,
             guantes, botas dieléctricas, arnés, gafas.
@@ -209,159 +212,156 @@
         </div>
       </div>
 
-      <div class="flex flex-col justify-center gap-10 items-center">
-
-        <div class="flex flex-col gap-2 justify-center items-center " href>
-          <h2 class="text-4xl font-bold mb-5">
-            Plan de emergencias de la empresa.
-          </h2>
-          <div class="flex flex-row gap-10">
-
-            <div>
-              <h3 class="font-bold">Tipos de emergencia</h3>
-              <ol type="1">
-
-                <li>1.eléctrica</li>
-                <li>2.mecánica</li>
-                <li>3.incendio</li>
-                <li>4.atrapamiento</li>
-                <li>5.heridas</li>
-                <li>6.quemaduras</li>
-                <li>7.caídas</li>
-              </ol>
-            </div>
-            <img src="./assets/planEmergencia.jpg" class="w-[200px]" alt>
-          </div>
+      <div class="w-full flex flex-col gap-2 justify-center items-center " >
+        <h2 class="text-4xl font-bold mb-5">
+          Plan de emergencias de la empresa.
+        </h2>
+        <div class="flex flex-col md:flex-row gap-10">
 
           <div>
+            <h3 class="font-bold">Tipos de emergencia</h3>
+            <ol type="1">
 
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-
-              1.Emergencia Eléctrica
-            </h4>
-            Cortar inmediatamente la fuente de energía si es seguro hacerlo.
-
-            No tocar a una persona electrocutada directamente.
-
-            Señalizar la zona para evitar nuevos contactos.
-
-            Notificar
-            a supervisores y activar el protocolo de primeros auxilios.
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-              2. Emergencia Mecánica (atrapamientos, golpes, cortaduras)
-            </h4>
-
-            Detener la máquina o herramienta involucrada.
-
-            No intentar mover a la persona si hay riesgo de empeorar la lesión.
-
-            Aplicar primeros auxilios según el caso (control de sangrado,
-            inmovilización).
-
-            Dar aviso
-            inmediato a la brigada de emergencia y llamar asistencia médica.
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-
-              3. Incendio
-            </h4>
-            Activar la alarma y evacuar por las rutas señaladas.
-
-            Si el fuego es pequeño y controlable, usar el extintor (tipo ABC).
-
-            No usar agua si hay riesgo eléctrico.
-            .
-            No correr ni devolverse por objetos.
-
-            Reunirse e
-            n el punto de encuentro.
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-
-              4. Atrapamiento
-            </h4>
-            No ingresar sin autorización ni sin equipo de rescate.
-
-            Asegurar la zona para evitar más accidentes.
-
-            Llamar a la brigada o personal entrenado en rescate.
-
-            Mantener la comunicación con la persona atrapada si es posible.
-
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-
-              5.Heridas
-            </h4>
-
-            Lavar la herida con agua limpia.
-
-            Aplicar presión si hay sangrado.
-
-            Cubrir con
-            gasa estéril.
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-
-              6.Quemaduras
-            </h4>
-            Enfriar la zona con agua (no aplicar cremas).
-            No retirar ropa adherida a la piel.
-            Cubrir con un paño limpio y seco.
-
-            Caídas
-
-            Evaluar si la persona está consciente.
-
-            No mover si se sospecha fractura o lesión en cuello/espalda.
-
-            Inmoviliza
-            r y pedir ayuda médica.
-            <div class="mb-10"></div>
-            <h4 class="font-bold">
-
-              7.Uso del Extintor*
-            </h4>
-
-            Pull: Retirar el pasador de seguridad.
-
-            Aim: Apuntar a la base del fuego.
-
-            Squeeze: Presionar la manija.
-
-            Sweep: Barrer de lado a lado en la base de las llamas.
-
-            Comunicación y Reporte Inmediato
-            Reportar el incidente al jefe inmediato o supervisor.
-
-            Llamar al número interno de emergencia de la empresa.
-
-            Registrar el incidente en el formato correspondiente.
-
-            Notificar a la ARL si hay lesión.
+              <li>1.eléctrica</li>
+              <li>2.mecánica</li>
+              <li>3.incendio</li>
+              <li>4.atrapamiento</li>
+              <li>5.heridas</li>
+              <li>6.quemaduras</li>
+              <li>7.caídas</li>
+            </ol>
           </div>
-          <iframe 
-            class="m-20"
-            width="560" height="315"
-            src="https://www.youtube.com/embed/9M8JuKaZMbk?si=T5Ep1OgA-Kvurlaz"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
-
-          <iframe 
-            class="m-20"
-            width="560" height="315"
-            src="https://www.youtube.com/embed/3Sk6PqEa0ZA?si=IV75qLXzlfiVLSgE"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
+          <img src="./assets/planEmergencia.jpg" class="w-full" alt>
         </div>
 
+        <div>
+
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+
+            1.Emergencia Eléctrica
+          </h4>
+          Cortar inmediatamente la fuente de energía si es seguro hacerlo.
+
+          No tocar a una persona electrocutada directamente.
+
+          Señalizar la zona para evitar nuevos contactos.
+
+          Notificar
+          a supervisores y activar el protocolo de primeros auxilios.
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+            2. Emergencia Mecánica (atrapamientos, golpes, cortaduras)
+          </h4>
+
+          Detener la máquina o herramienta involucrada.
+
+          No intentar mover a la persona si hay riesgo de empeorar la lesión.
+
+          Aplicar primeros auxilios según el caso (control de sangrado,
+          inmovilización).
+
+          Dar aviso
+          inmediato a la brigada de emergencia y llamar asistencia médica.
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+
+            3. Incendio
+          </h4>
+          Activar la alarma y evacuar por las rutas señaladas.
+
+          Si el fuego es pequeño y controlable, usar el extintor (tipo ABC).
+
+          No usar agua si hay riesgo eléctrico.
+          .
+          No correr ni devolverse por objetos.
+
+          Reunirse e
+          n el punto de encuentro.
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+
+            4. Atrapamiento
+          </h4>
+          No ingresar sin autorización ni sin equipo de rescate.
+
+          Asegurar la zona para evitar más accidentes.
+
+          Llamar a la brigada o personal entrenado en rescate.
+
+          Mantener la comunicación con la persona atrapada si es posible.
+
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+
+            5.Heridas
+          </h4>
+
+          Lavar la herida con agua limpia.
+
+          Aplicar presión si hay sangrado.
+
+          Cubrir con
+          gasa estéril.
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+
+            6.Quemaduras
+          </h4>
+          Enfriar la zona con agua (no aplicar cremas).
+          No retirar ropa adherida a la piel.
+          Cubrir con un paño limpio y seco.
+
+          Caídas
+
+          Evaluar si la persona está consciente.
+
+          No mover si se sospecha fractura o lesión en cuello/espalda.
+
+          Inmoviliza
+          r y pedir ayuda médica.
+          <div class="mb-10"></div>
+          <h4 class="font-bold">
+
+            7.Uso del Extintor*
+          </h4>
+
+          Pull: Retirar el pasador de seguridad.
+
+          Aim: Apuntar a la base del fuego.
+
+          Squeeze: Presionar la manija.
+
+          Sweep: Barrer de lado a lado en la base de las llamas.
+
+          Comunicación y Reporte Inmediato
+          Reportar el incidente al jefe inmediato o supervisor.
+
+          Llamar al número interno de emergencia de la empresa.
+
+          Registrar el incidente en el formato correspondiente.
+
+          Notificar a la ARL si hay lesión.
+        </div>
+        <iframe 
+          class="m-20 w-5/6 md:1/2"
+          height="315"
+          src="https://www.youtube.com/embed/9M8JuKaZMbk?si=T5Ep1OgA-Kvurlaz"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+
+        <iframe 
+          class="m-20 w-5/6 md:1/2" height="315"
+          src="https://www.youtube.com/embed/3Sk6PqEa0ZA?si=IV75qLXzlfiVLSgE"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </div>
+
+      
     </div>
 
     <a
