@@ -4,17 +4,24 @@
     // Mostrar el texto en el div
     
     var password = prompt("Contraseña:");      
-    
-    while(password!="atsemPLUS"){
-      password = prompt("Contraseña:");   
-    }
+    var counter = 0;
 
-    const texto = prompt("Escribe el nombre");
-    if (texto !== null) {
-      document.getElementById('contenedorTexto').textContent = texto;
-    } else {
-      document.getElementById('contenedorTexto').textContent = 'No ingresaste ningún texto.';
+    while(password!="atsemPLUS" && counter != 5){
+      password = prompt("Ingrese la Contraseña:"); 
+      counter++
     }
+    if(counter == 5){
+      alert("Ingreso muchas veces una contraseña incorrecta, recargue la pagina") 
+    }
+    else{
+      const texto = prompt("Escribe el nombre");
+      if (texto !== null) {
+        document.getElementById('contenedorTexto').textContent = texto;
+      } else {
+        document.getElementById('contenedorTexto').textContent = 'No ingresaste ningún texto.';
+      }
+    }
+    
 
 
 

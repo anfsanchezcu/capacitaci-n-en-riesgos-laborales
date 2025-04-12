@@ -9,7 +9,7 @@
   <body>
     <div id="hero">
       <div
-        class="bg-white p-10 flex justify-center items-center gap-10 shadow-xl">
+        class="bg-white p-10  flex justify-center items-center gap-10 shadow-xl">
         <img src="./assets/logo.jpg" class="w-[100px]" alt="logo">
         <div>
           <h1 class="text-2xl font-bold">Atsem PLUS S.A </h1>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col justify-center items-center p-10 gap-10 flex-wrap  ">
+        class="flex flex-col justify-center items-center p-10 gap-10 flex-wrap py-20 ">
         <div class="flex flex-row gap-10 flex-wrap justify-center">
           <a class="flex flex-col gap-2 justify-center items-center"
             href="./#contact">
@@ -25,12 +25,12 @@
             <p class="text-center">Nosotros</p>
           </a>
           <a class="flex flex-col gap-2 justify-center items-center"
-            href="/capacitaci-n-en-riesgos-laborales/#aboutUs">
+            href="./#aboutUs">
             <img src="./assets/mision.jpg" class="w-[100px]" alt>
             <p class="text-center">Cultura Organizacional</p>
           </a>
           <a class="flex flex-col gap-2  justify-center items-center"
-            href="/capacitaci-n-en-riesgos-laborales/#organigrama">
+            href="./#organigrama">
             <img src="./assets/org.jpg" class="w-[100px] object-contain" alt>
             <p class="text-center">Organigrama</p>
           </a>
@@ -38,7 +38,7 @@
         <div class="flex flex-row gap-10 flex-wrap justify-center">
 
           <a class="flex flex-col gap-2   justify-center items-center"
-            href="/capacitaci-n-en-riesgos-laborales/#capacitacion  ">
+            href="./#capacitacion  ">
             <img src="./assets/capacitacion.jpg" class="w-[100px] " alt>
             <p class="text-center">Capacitación riesgos laborales</p>
           </a>
@@ -51,7 +51,7 @@
           </a>
 
           <a class="flex flex-col gap-2 justify-center items-center"
-            href="./certificado.html">
+            href="./certificado.html" target="_blank">
             <img src="./assets/certificado.jpg" class="w-[100px]" alt>
             <p class="text-center">Certificado</p>
           </a>
@@ -61,11 +61,25 @@
       </div>
     </div>
 
-    <div id="contact" class="flex items-center p-10 h-screen justify-center">
-      <div class="w-1/2 md:5/6 flex flex-col gap-2 justify-center items-center"
+    <div id="contact"
+      class="flex items-center p-10 min-h-screen justify-center">
+      <div class="w-5/6 flex flex-col gap-2 justify-center items-center"
         href>
-        <h2 class="font-bold text-2xl mb-5">Nosotros</h2>
-        <img src="./assets/somos.jpg" class=" w-[350px]" alt>
+        <h2 class="font-bold text-4xl mb-5">Nosotros</h2>
+        <div class="flex flex-row gap-5 justify-center items-center">
+          <div class="flex flex-row gap-5 w-full ">
+            <img src="./assets/03.jpg" class="object-contain" alt>
+          </div>
+          <div class="flex flex-col gap-5  ">
+            <img src="./assets/01.jpg" class="object-contain" alt>
+            <img src="./assets/02.jpg" class="object-contain" alt>
+          </div>
+          <div class="flex flex-col gap-5  ">
+            <img src="./assets/somos.jpg" class="object-contain" alt>
+            <img src="./assets/04.jpg" class="object-contain" alt>
+          </div>
+        </div>
+
         <p class="text-center">Somos una empresa que trabaja para brindar un
           transporta vertical más seguro y confiable a nivel nacional, con el
           objetivo de proporcionar soluciones de accesibilidad permitiendo a las
@@ -73,8 +87,9 @@
           facilidad e independencia</p>
       </div>
     </div>
-    <div id="aboutUs" class="flex items-center p-10 h-screen justify-center">
-      <h1></h1>
+    <div id="aboutUs"
+      class="flex flex-col items-center p-10 min-h-screen justify-center">
+      <h2 class="font-bold text-4xl mb-5">Cultura Organizacional</h2>
       <div class="flex flex-row justify-center gap-10 flex-wrap">
         <div class="w-1/2 flex flex-col gap-2 justify-center items-center" href>
           <img src="./assets/iconmision.png" class=" w-[250px]" alt>
@@ -95,15 +110,17 @@
 
     </div>
     <div id="organigrama"
-      class="flex items-center p-20 h-screen max-h-screen justify-center relative content-fit">
+      class="flex flex-col items-center p-20 min-h-screen max-h-screen justify-center relative content-fit">
+      <h2 class="font-bold text-4xl mb-5">Organigrama</h2>
       <img src="./assets/organigrama.png"
-        class="max-h-screen h-[400px] relative" alt="organigrama">
+        class="max-h-screen h-[400px] relative hover:scale-[1.3] duration-300 ease-in   "
+        alt="organigrama">
     </div>
     <div id="capacitacion"
       class="flex flex-col items-center gap-15 p-20 justify-center">
-      <h1 class="text-4xl font-bold">
+      <h2 class="text-4xl font-bold">
         Riesgos Laborales
-      </h1>
+      </h2>
       <h3 class="text-xl font-bold">
         ¿Qué son los Riesgos laborales ?
       </h3>
@@ -195,7 +212,7 @@
       <div class="flex flex-col justify-center gap-10 items-center">
 
         <div class="flex flex-col gap-2 justify-center items-center " href>
-          <h2 class="text-xl font-bold mb-5">
+          <h2 class="text-4xl font-bold mb-5">
             Plan de emergencias de la empresa.
           </h2>
           <div class="flex flex-row gap-10">
@@ -325,14 +342,31 @@
 
             Notificar a la ARL si hay lesión.
           </div>
+          <iframe 
+            class="m-20"
+            width="560" height="315"
+            src="https://www.youtube.com/embed/9M8JuKaZMbk?si=T5Ep1OgA-Kvurlaz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+
+          <iframe 
+            class="m-20"
+            width="560" height="315"
+            src="https://www.youtube.com/embed/3Sk6PqEa0ZA?si=IV75qLXzlfiVLSgE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
         </div>
 
       </div>
     </div>
-    
+
     <a
       class="bg-blue-300 shadow-xl p-2 hover:p-1 duration-300 ease-in  hover:shadow-xl  rounded fixed bottom-5 right-5 w-[50px] flex flex-col justify-center gap-2 items-center"
-      href="/capacitaci-n-en-riesgos-laborales/#hero">
+      href="./#hero">
       <img src="./assets/flecha-izquierda.png" class="w-[100px]" alt>
       <p class="text-white">Inicio</p>
     </a>
